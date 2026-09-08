@@ -21,7 +21,7 @@ dependencies:
   web_socket_channel: ^3.0.3
   flutter_tts: ^4.2.5
   speech_to_text: ^7.4.0
-  youtube_player_iframe: ^6.0.2
+  youtube_player_iframe: ^5.2.1
   just_audio: ^0.9.36
   flutter_local_notifications: ^17.0.0
   http: ^1.2.0
