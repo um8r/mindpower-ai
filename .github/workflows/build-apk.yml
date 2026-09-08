@@ -1,12 +1,8 @@
 ﻿name: Build Android APK
-
 on:
   push:
     branches: [ main ]
-  pull_request:
-    branches: [ main ]
-  workflow_dispatch: # Yeh line manual run ka button le aayegi
-
+  workflow_dispatch:
 jobs:
   build:
     runs-on: ubuntu-latest
