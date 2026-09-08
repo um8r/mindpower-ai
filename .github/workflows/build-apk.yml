@@ -1,8 +1,12 @@
 ﻿name: Build Android APK
+
 on:
   push:
     branches: [ main ]
+  pull_request:
+    branches: [ main ]
   workflow_dispatch:
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -24,9 +28,10 @@ jobs:
           channel: 'stable'
           cache: true
 
-      - name: Install Dependencies (Mobile)
+      - name: Clean and Setup Android
         run: |
           cd mobile
+          flutter clean
           flutter pub get
 
       - name: Build Release APK
